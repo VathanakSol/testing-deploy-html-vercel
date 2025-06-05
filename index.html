@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: block;
+            color: white;
+            background-color: green;
+            padding: 20px;
+        }
+
+        h2 {
+            display: inline;
+            color: white;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        img {
+            display: inline;
+        }
+
+        p {
+            display: inline-block;
+            width: 500px;
+        }
+
+        .container {
+            display: flex;
+            background-color: blue;
+            color: white;
+            padding: 25px;
+        }
+
+        .flex {
+            background-color: green;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: orange;
+            padding: 8px;
+            font-size: 1.2rem;
+            text-align: center;
+            border: 2px red solid;
+        }
+
+        .grid1 {
+            color: white;
+        }
+        
+        .grid2 {
+            color: yellow;
+        }
+
+        .grid3 {
+            color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Display Property -->
+    <!-- <h1>I love Cambodia Country</h1>
+
+    <h2>I love Cambodia</h1>
+
+    <img src="/images/dog.jpg" alt="Dog" width="200px"> -->
+
+    <!-- <p style="background-color: yellow; color: red; font-weight: bold; font-size: 2rem;">Natural</p>
+
+    <p style="background-color: yellow; color: red; font-weight: bold; font-size: 2rem;">Diamond</p> -->
+
+    <div class="container">
+        <div class="flex1 flex">Flex 1</div>
+        <div class="flex2 flex">Flex 2</div>
+        <div class="flex3 flex">Flex 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid1 grid">Grid 1</div>
+        <div class="grid2 grid">Grid 2</div>
+        <div class="grid3 grid">Grid 3</div>
+        <div class="grid1 grid">Grid 1</div>
+        <div class="grid2 grid">Grid 2</div>
+        <div class="grid3 grid">Grid 3</div>
+    </div>
+
+</body>
+</html>

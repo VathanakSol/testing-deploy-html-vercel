@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: relative;
+        left: 20px;
+      }
+
+      .inner {
+        width: 50px;
+        height: 50px;
+        display: absolute;
+        background-color: red;
+        font-size: 0.5rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation: slideIn 1s ease-in-out forwards;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        animation: slideAndFade 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes slideAndFade {
+        0% {
+          transform: translateX() rotate(0deg);
+          opacity: 1;
+        }
+        50% {
+          transform: translateX(200px) rotate(180deg);
+          opacity: 0.5;
+          background-color: #e74c3c;
+        }
+        100% {
+          transform: translateX(0) rotate(360deg);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner">Inner Box</div>
+    </div>
+  </body>
+</html>

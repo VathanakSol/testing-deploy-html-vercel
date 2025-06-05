@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Lesson</title>
+    <style>
+        .static {
+            position: static;
+            color: white;
+            background-color: red;
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.75rem;
+        }
+        .fixed {
+            position: fixed;
+            top: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            background-color: blue;
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.75rem;
+        }
+        body {
+            height: 200vh;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .content{
+            display: flex;
+            width: 100vw;
+        }
+        .sticky {
+            position: sticky;
+            top: 10px;
+            text-align: center;
+            background-color: gray;
+            color: orange;
+            padding: 4px;
+        }
+
+        .relative {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            background-color: rgb(140, 3, 3);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: yellow;
+            color: black;
+            bottom: 5px;
+            right: 5px;
+        }
+
+        .overflow-content {
+            background-color: blue;
+            color: black;
+            height: 100px;
+            width: 200px;
+            padding: 8px;
+            overflow: scroll;
+            overflow-y: visible;
+            overflow-x: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Static Position -->
+    <div class="static">
+        Static Box
+    </div>
+    <!-- <div class="fixed">
+        Menu
+        <div class="content">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div style="position: fixed; top: 0px; background-color: orange; width: 100vw;">
+            Banner
+        </div>
+    </div> -->
+
+    <div class="sticky">
+        Stick me here
+    </div>    
+
+    <!-- <div class="relative">
+        Relative Box Content
+        <div class="absolute">
+            Absolute Box Content
+        </div>
+    </div> -->
+
+    <div class="overflow-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab eos vero, corrupti architecto aliquam nam cumque, rem rerum molestias, facilis sunt nostrum ad deserunt totam autem fugit dolorum vitae?
+    </div>
+
+</body>
+</html>
